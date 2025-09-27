@@ -21,7 +21,7 @@ Predicting order delivery time (minutes) from operational features such as dista
 
 ---
 
-## 🧭 Methodology (summary)
+## 🧭 Methodology
 
 1. **EDA & Cleaning**
 
@@ -128,25 +128,6 @@ jupyter notebook food-delivery-time-prediction.ipynb
 * **Features**: order size, cuisine type, store queue length, live traffic/rain intensity.
 * **Modeling**: interaction terms; **Ridge/Lasso/Elastic Net** for stability; optional **Quantile/Huber** loss for tail control; SHAP for explainability.
 * **Ops**: monitoring (MAE/P90 lateness), data drift checks, retrain cadence. 
-
----
-
-## 📂 Repository Structure (suggested)
-
-```
-.
-├─ data/                       # raw/processed (exclude large files from git)
-├─ notebooks/
-│  └─ food-delivery-time-prediction.ipynb
-├─ src/
-│  ├─ features.py              # encoding, pipelines
-│  ├─ models.py                # model builders, grids
-│  └─ evaluate.py              # metrics, plots
-├─ reports/
-│  └─ Data Science Food Delivery Time Prediction.pdf
-├─ README.md
-└─ requirements.txt
-```
 
 ---
 
